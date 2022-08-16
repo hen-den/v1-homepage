@@ -7,10 +7,18 @@ export const Intro = (props) => {
                         <span className="emoji wave-hand animated"></span>
                     </h1>
                     <h2 className="intro__tagline">I'm
-                        <span className="name"> Mertkan Henden</span>, a design-minded front-end software engineer focused on
-                        building beautiful interfaces &amp; experiences
+                        <span className="name"> Mertkan Henden</span>, a <br/><span className="name">Data Scientist &amp; Web-Developer</span> focused on
+                        supporting the digital transformation of the mobility &amp; manufacturing sector
                         <span className="emoji technologist"></span>
                     </h2>
+                    <h3 className="intro__contact">
+                        <span>Get in touch </span>
+                        <span className="emoji pointer"></span>
+                        <span>
+                  <a href="mailto:mertkan.henden@gmx.de" target="_blank"
+                     className="highlight-link">mertkan.henden@gmx.de</a>
+                </span>
+                    </h3>
                 </div>
 
 
@@ -21,14 +29,7 @@ export const Intro = (props) => {
                 </h2>
 
             </div>
-            <h3 className="intro__contact">
-                <span>Get in touch </span>
-                <span className="emoji pointer"></span>
-                <span>
-                  <a href="mailto:brittany.chiang@gmail.com" target="_blank"
-                     className="highlight-link">brittany.chiang@gmail.com</a>
-                </span>
-            </h3>
+
         </header>
 
     )
