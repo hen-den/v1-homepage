@@ -13,7 +13,8 @@ import LinkedIn from './img/social/linkedin.svg';
 import {TopBottom} from "./components/top-bottom";
 import React, {useEffect} from "react";
 import ScrollReveal from "scrollreveal";
-
+import business_img from './img/profile/business.png';
+import {CardOverview} from "./components/card-overview";
 
 function App() {
 
@@ -63,9 +64,11 @@ function App() {
 
       window.sr.reveal('.background');
       window.sr.reveal('.skills');
+      window.sr.reveal('.card-overview', { viewFactor: 0.1 });
       window.sr.reveal('.experience', { viewFactor: 0.2 });
       window.sr.reveal('.featured-projects', { viewFactor: 0.1 });
-      window.sr.reveal('.other-projects', { viewFactor: 0.05 });
+      window.sr.reveal('.other-projects', { viewFactor: 0.1 });
+
       }
   )
 
@@ -73,12 +76,14 @@ function App() {
     <div className="App">
       <div id="site">
         <Switch />
-        <Intro />
+        <Intro image={{img_url: business_img}}/>
         <Background />
         <Skills languages={["deutsch", "deutsch", "deutsch"]}
                 frameworks={["deutsch", "deutsch", "deutsch"]}
                 tools={["deutsch", "deutsch", "deutsch"]}
                 design={["deutsch", "deutsch", "deutsch"]} />
+
+        <CardOverview/>
 
         <Experience experience={[{
               company: "Apple Music",
@@ -129,6 +134,7 @@ function App() {
              }]}
 
          />
+
 
           <Footer links={[{
               title: "LinkedIn",

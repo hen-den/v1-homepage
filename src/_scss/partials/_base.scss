@@ -53,6 +53,12 @@ body {
     .section__content .underline-link:after {
       background: $off-white;
     }
+    .cards__card-content{
+      background: $off-white;
+      h1, h2, p, span, div {
+        color: $night;
+      };
+    }
   }
 }
 
@@ -97,6 +103,13 @@ strong {
   display: flex;
   justify-content: center;
   padding: 100px 170px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  h1{
+    color: $blue;
+  }
+
   @include thirteen {
     padding: 100px;
   }

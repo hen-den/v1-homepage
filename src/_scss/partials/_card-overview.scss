@@ -1,0 +1,39 @@
+.card-overview {
+  .cards {
+    font-size: 1.25rem;
+    display: flex;
+    width: 100%;
+    height: 18.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.75em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+
+    &__card-content {
+      border-radius: 18px;
+      background: #ffffff;
+      width: 100%;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      word-wrap: break-word;
+      padding: 15px 15px 0 15px;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
+        transform: scale(1.03);
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+}
+
+
+
+
+

@@ -1,18 +1,23 @@
-export const Intro = () => {
+export const Intro = (props) => {
     return (
         <header className="intro">
-            <h1 className="intro__hello">Hello!
-                <span className="emoji wave-hand animated"></span>
-            </h1>
             <div className="intro__twosection">
-                <h2 className="intro__tagline">I'm
-                    <span className="name"> Mertkan Henden</span>, a design-minded front-end software engineer focused on
-                    building beautiful interfaces &amp; experiences
-                    <span className="emoji technologist"></span>
-                </h2>
+                <div>
+                    <h1 className="intro__hello">Hello!
+                        <span className="emoji wave-hand animated"></span>
+                    </h1>
+                    <h2 className="intro__tagline">I'm
+                        <span className="name"> Mertkan Henden</span>, a design-minded front-end software engineer focused on
+                        building beautiful interfaces &amp; experiences
+                        <span className="emoji technologist"></span>
+                    </h2>
+                </div>
 
-                <h2 className="intro__tagline">I'm
-                    <span className="name"> Mertkan Henden</span>dkjdhfkgkdf
+
+                <h2 className="intro__tagline">
+                    <figure>
+                    <img src={props.image.img_url} alt="" />
+                    </figure>
                 </h2>
 
             </div>

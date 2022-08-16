@@ -1,5 +1,4 @@
 export function Skills(props) {
-
     return (
         <section className="section skills">
             <div className="section__title">Skills</div>
