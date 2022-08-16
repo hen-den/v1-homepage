@@ -9,10 +9,66 @@ import Blistabloc from './img/featured/blistabloc/blistabloc.png';
 import {OtherProjects} from "./components/other-projects";
 import {Footer} from "./components/footer";
 import Github from './img/social/github.svg';
+import LinkedIn from './img/social/linkedin.svg';
 import {TopBottom} from "./components/top-bottom";
+import React, {useEffect} from "react";
+import ScrollReveal from "scrollreveal";
 
 
 function App() {
+
+  useEffect(() => {
+      // Light & Dark mode
+      const d = new Date();
+      const hours = d.getHours();
+      const night = hours >= 19 || hours <= 7; // between 7pm and 7am
+      const body = document.querySelector('body');
+      const input = document.getElementById('switch');
+
+      if (night) {
+          input.checked = true;
+          body.classList.add('night');
+      }
+
+      // Waving Hand
+      const hand = document.querySelector('.emoji.wave-hand');
+
+      function waveOnLoad() {
+          hand.classList.add('wave');
+          setTimeout(function() {
+              hand.classList.remove('wave');
+          }, 2000);
+      }
+
+      setTimeout(function() {
+          waveOnLoad();
+      }, 1000);
+
+      hand.addEventListener('mouseover', function() {
+          hand.classList.add('wave');
+      });
+
+      hand.addEventListener('mouseout', function() {
+          hand.classList.remove('wave');
+      });
+
+      // Scroll reveal
+      window.sr = ScrollReveal({
+          reset: false,
+          duration: 600,
+          easing: 'cubic-bezier(.694,0,.335,1)',
+          scale: 1,
+          viewFactor: 0.3,
+      });
+
+      window.sr.reveal('.background');
+      window.sr.reveal('.skills');
+      window.sr.reveal('.experience', { viewFactor: 0.2 });
+      window.sr.reveal('.featured-projects', { viewFactor: 0.1 });
+      window.sr.reveal('.other-projects', { viewFactor: 0.05 });
+      }
+  )
+
   return (
     <div className="App">
       <div id="site">
@@ -76,7 +132,7 @@ function App() {
 
           <Footer links={[{
               title: "LinkedIn",
-              img_url: Github,
+              img_url: LinkedIn,
               url: "https://www.apple.com/music/",
           },{
               title: "Xing",
