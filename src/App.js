@@ -10,6 +10,7 @@ import {OtherProjects} from "./components/other-projects";
 import {Footer} from "./components/footer";
 import Github from './img/social/github.svg';
 import LinkedIn from './img/social/linkedin.svg';
+import Xing from './img/social/xing.png'
 import {TopBottom} from "./components/top-bottom";
 import React, {useEffect} from "react";
 import ScrollReveal from "scrollreveal";
@@ -83,7 +84,7 @@ function App() {
                 tools={["deutsch", "deutsch", "deutsch"]}
                 design={["deutsch", "deutsch", "deutsch"]} />
 
-        <CardOverview/>
+        <CardOverview />
 
         <Experience experience={[{
               company: "Apple Music",
@@ -142,7 +143,7 @@ function App() {
               url: "https://www.apple.com/music/",
           },{
               title: "Xing",
-              img_url: Github,
+              img_url: Xing,
               url: "https://www.apple.com/music/",
           },{
               title: "Github",

@@ -80,9 +80,9 @@ export function CardOverview(props) {
                             <div className="">
                                 testname
                             </div>
-                            <h1 className="">
+                            <h2 className="">
                                 testname
-                            </h1>
+                            </h2>
                             <p>sdfgsfgsfgsfgfsg</p>
                         </div>
                     </div>
