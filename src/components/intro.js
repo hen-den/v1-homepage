@@ -1,7 +1,7 @@
 export const Intro = (props) => {
     return (
         <div className="intro__twosection">
-            <header className="intro" style={{paddingBottom:"0px"}} >
+            <header className="intro">
 
                     <div className="intro__tagline">
                         <h1 className="intro__hello">Hello!
