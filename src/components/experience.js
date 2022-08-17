@@ -24,7 +24,7 @@ export function Experience(props) {
 
                 </div>
 
-                <a href="#" target="_blank" className="arrow-link">View My Resume</a>
+                <a href="mailto:mertkan.henden@gmx.de" target="_blank" className="arrow-link">Request My Resume</a>
             </div>
         </section>
 

@@ -9,16 +9,11 @@ export function FeaturedProjects(props) {
                     return (
 
                         <div className={`project ${project.name}`}>
-                            <figure className="project__pic">
-                                <a href="https://blistabloc.com/" target="_blank">
-                                    <img src={project.img_url} alt="" />
-                                </a>
-                            </figure>
                             <figcaption className="project__caption">
                                 <div className="project__name">
                                     <a href={project.url} target="_blank">{project.name}</a>
                                 </div>
-                                <p>{project.description}</p>
+                                <p style={{whiteSpace:"pre-wrap"}}>{project.description}</p>
                             </figcaption>
                         </div>
 

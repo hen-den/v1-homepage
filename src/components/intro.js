@@ -7,7 +7,7 @@ export const Intro = (props) => {
                         <span className="emoji wave-hand animated"></span>
                     </h1>
                     <h2 className="intro__tagline">I'm
-                        <span className="name"> Mertkan Henden</span>, a <br/><span className="name">Data Scientist &amp; Web-Developer</span> focused on
+                        <span className="name"> Mertkan Henden</span>, a <span className="name">Data Scientist &amp; Web-Developer</span> focused on
                         supporting the digital transformation of the mobility &amp; manufacturing sector
                         <span className="emoji technologist"></span>
                     </h2>

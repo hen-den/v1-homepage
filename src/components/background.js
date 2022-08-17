@@ -4,29 +4,21 @@ export const Background = () => {
             <div className="section__title">Background</div>
             <div className="section__content">
                 <p>
-                    I'm currently an Engineer at
-                    <a className="underline-link" href="https://www.upstatement.com/"
-                       target="_blank">Upstatement</a> building things for the web with some awesome people. I recently
-                    graduated from
-                    <a className="underline-link" href="http://www.ccis.northeastern.edu/" target="_blank">Northeastern
-                        University</a> after completing three awesome six-month co-ops at
-                    <a className="underline-link" href="https://us.mullenlowe.com/" target="_blank">MullenLowe U.S.</a>,
-                    <a className="underline-link" href="https://starry.com/" target="_blank">Starry</a>, and
-                    <a className="underline-link" href="https://www.apple.com/music/" target="_blank">Apple Music</a>.
+                    I'm a Data Scientist &amp; Web-Developer at <a className="underline-link" href="https://www.mhp.com/de/"
+                       target="_blank">MHP - A Porsche Company</a> representing international clients throughout europe
+                    and supporting the software development process in an enterprise group environment.
                 </p>
 
                 <p>
-                    As a software engineer, I enjoy bridging the gap between engineering and design &mdash; combining my
-                    technical knowledge
-                    with my keen eye for design to create a beautiful product. My goal is to always build applications
-                    that are scalable
-                    and efficient under the hood while providing engaging, pixel-perfect user experiences.
+                    With my expertise in software engineering and web development I am part of development teams and
+                    apply data science to improve processes and existing products.
+
+                    I enjoy developing scalable applications and machine learning solutions for a variety of use cases
+                    and strive to enhance my overall technical skills.
                 </p>
 
                 <p>
-                    <strong>When I'm not in front of a computer screen</strong>, I'm probably snowboarding, cruising
-                    around on my penny board,
-                    or crossing off another item on my bucket list.
+                    After previously graduating from <a className="underline-link" href="https://www.hs-heilbronn.de/en" target="_blank">Heilbronn University of Applied Sciences</a> and working at  <a className="underline-link" href="https://www.bosch.com/n" target="_blank"> Robert Bosch GmbH</a> I am now on my path to shape a better tomorrow.
                 </p>
 
             </div>

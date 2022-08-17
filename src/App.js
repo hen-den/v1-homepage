@@ -79,59 +79,65 @@ function App() {
         <Switch />
         <Intro image={{img_url: business_img}}/>
         <Background />
-        <Skills languages={["deutsch", "deutsch", "deutsch"]}
-                frameworks={["deutsch", "deutsch", "deutsch"]}
-                tools={["deutsch", "deutsch", "deutsch"]}
-                design={["deutsch", "deutsch", "deutsch"]} />
 
-        <CardOverview />
+        <CardOverview topics={[{
+            headline: "Consulting",
+            name: "Business Analysis",
+            description: "Technical analysis and coordination of brandspecific software requirements in enterprise organizations"
+        },{
+            headline: "Full Stack Developer",
+            name: "Scalable Web Apps",
+            description: "Development of software solutions for customer projects"
+        },{
+            headline: "Data Engineering",
+            name: "Building Data Pipelines",
+            description: "Query and organize raw data from data lakes and data warehouses. " +
+                "Perform data transformation processes and develop analytical visualizations."
+        },{
+            headline: "Data Science",
+            name: "Creation of ML Classifiers",
+            description: "Design and implementation of optimized classifiers based on previously " +
+                "identified data features and characteristics."
+        }
+
+        ]}/>
+
+        <Skills languages={["JavaScript", "Python", "Java", "SQL", "HTML", "CSS"]}
+                frameworks={["React", "Django", "Django-REST", "Flask", "Spring Boot"]}
+                tools={["Bash", "Git & Github", "Postman", "Jupyter Notebooks", "Apache HUE SQL Editor"]}
+                data_transformation={["Apache Spark", "PySpark", "Scikit-Learn", "Keras", "Pandas", "Numpy", "Matplotlib", "SciPy"]} />
 
         <Experience experience={[{
-              company: "Apple Music",
-              url: "https://www.apple.com/music/",
-              time: "Jan - June 2018",
-              position: "Developer"
+              company: "MHP - A Porsche Company",
+              url: "https://www.mhp.com/en/",
+              time: "Jan 2022 - Present",
+              position: "Consultant & Web-Developer"
         }, {
-              company: "Apple Music",
-              url: "https://www.apple.com/music/",
-              time: "Jan - June 2018",
-              position: "Developer"
+              company: "Robert Bosch GmbH",
+              url: "https://www.bosch.com/",
+              time: "Mar 2020 - Dec 2021",
+              position: "Software Engineer & Data Scientist"
           }]} />
-
-          <FeaturedProjects projects={[{
-              name: "Apple",
-              img_url: Blistabloc,
-              url: "https://www.apple.com/music/",
-              description: "sdfsdfksdhfkjsdh skdjhfkjsd kjshdkjfhs hksjdhfkjsh kjshkj hk",
-          },{
-              name: "Apple",
-              img_url: Blistabloc,
-              url: "https://www.apple.com/music/",
-              description: "sdfsdfksdhfkjsdh skdjhfkjsd kjshdkjfhs hksjdhfkjsh kjshkj hk",
-          },{
-              name: "Apple",
-              img_url: Blistabloc,
-              url: "https://www.apple.com/music/",
-              description: "sdfsdfksdhfkjsdh skdjhfkjsd kjshdkjfhs hksjdhfkjsh kjshkj hk",
-          },
-          ]} />
 
          <OtherProjects
              projects={[{
-                 name: "Other Project",
-                 url: "https://www.apple.com/music/",
-                 description: "sdfsdfksdhfkjsdh skdjhfkjsd kjshdkjfhs hksjdhfkjsh kjshkj hk",
-                 used: ["HTML", "CSS", "React", "Django-REST"]
+                 name: "Bachelor's Thesis -  Traffic Sign Localization",
+                 url: "https://github.com/hen-den",
+                 description: "Prototypical design and implementation of a web service for the localization of specific traffic signs.\n \n" + "Grade: 1.0\n\n"+"• Detailed analysis of geographic OpenStreetMap data \n" +
+                     "• Determination of recurring enviromental features & characteristics\n" +
+                     "• Creation of machine learning classifiers for the detection of specific traffic signs \n" +
+                     "• Optimized route planning based on environmental characteristics & provision of detailed geographic feature overviews",
+                 used: ["React JS", "Python Django-REST", "PostGIS","HTML", "CSS"]
              },{
-                 name: "Other Project",
-                 url: "https://www.apple.com/music/",
-                 description: "sdfsdfksdhfkjsdh skdjhfkjsd kjshdkjfhs hksjdhfkjsh kjshkj hk",
-                 used: ["HTML", "CSS", "React", "Django-REST"]
+                 name: "Webapplication for Endurance Run Planning",
+                 url: "https://www.bosch.com/",
+                 description: "Applicationdesign, softwaredesign and development of a webapplication for planning validation routes for driver assistance systems",
+                 used: ["Django", "JavaScript", "MySQL", "LeafletJS", "D3-JS", "Apache Hadoop","HTML", "CSS"]
              },{
-                 name: "Other Project",
-                 url: "https://www.apple.com/music/",
-                 description: "sdfsdfksdhfkjsdh skdjhfkjsd kjshdkjfhs hksjdhfkjsh kjshkj hk",
-                 used: ["HTML", "CSS", "React", "Django-REST"]
+                 name: "Public Transport Transparency Register",
+                 url: "https://www.oepnv-transparenzregister.de/",
+                 description: "Webapplication to display services and costs in public bus transport",
+                 used: ["Python Flask", "JavaScript", "SQLite","HTML", "CSS"]
              }]}
 
          />
@@ -140,15 +146,15 @@ function App() {
           <Footer links={[{
               title: "LinkedIn",
               img_url: LinkedIn,
-              url: "https://www.apple.com/music/",
+              url: "https://www.linkedin.com/in/mertkan-henden/",
           },{
               title: "Xing",
               img_url: Xing,
-              url: "https://www.apple.com/music/",
+              url: "https://www.xing.com/profile/Mertkan_Henden/",
           },{
               title: "Github",
               img_url: Github,
-              url: "https://www.apple.com/music/",
+              url: "https://github.com/hen-den",
           }]}/>
 
           <TopBottom />

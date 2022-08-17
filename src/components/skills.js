@@ -41,9 +41,9 @@ export function Skills(props) {
                         </ul>
                     </div>
                     <div className="skillz__category">
-                        <div className="skillz__category__label">Design</div>
+                        <div className="skillz__category__label">Data Science</div>
                         <ul>
-                            {props.design.map(thing => {
+                            {props.data_transformation.map(thing => {
                                 return (
                                     <li className="skillz__category__item">{thing}</li>
                                 );
