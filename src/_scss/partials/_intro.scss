@@ -7,6 +7,9 @@
   margin: 0 auto;
 }
 .intro {
+  padding-left: 100px;
+  padding-bottom: 120px;
+  padding-top: 120px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,9 +29,9 @@
 
   &__twosection {
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 0;
     grid-auto-rows: minmax(100px, auto);
     display: grid;
+    grid-gap: 50px;
     @include phablet {
       grid-template-columns: repeat(1,1fr);
       grid-gap: 0;
